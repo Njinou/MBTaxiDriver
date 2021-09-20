@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>small star</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu" transform="translate(-59.000000, -41.000000)" fill="#F2B84D">
+            <g id="star-goup" transform="translate(59.000000, 41.000000)">
+                <polygon id="small-star" points="4 6.24 1.64885899 7.23606798 1.8696334 4.69219807 0.195773935 2.76393202 2.68336103 2.18780193 4 0 5.31663897 2.18780193 7.80422607 2.76393202 6.1303666 4.69219807 6.35114101 7.23606798"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

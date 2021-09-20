@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "459934870171",
+    "project_id": "mbtaxidriver",
+    "storage_bucket": "mbtaxidriver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459934870171:android:cedefce8cb763cc501f43e",
+        "android_client_info": {
+          "package_name": "com.mbtaxidriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459934870171-a2e96c9vfcamaks7l64dbnb8t6pkg231.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh3Ydx8zIAf6RHHiGRY_K8BhUi-L2_HlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459934870171-a2e96c9vfcamaks7l64dbnb8t6pkg231.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "459934870171-lj3c900crmqk1hnukp2pv9hdj8k81m2n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.mbouendeu.MBTaxiDriver"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

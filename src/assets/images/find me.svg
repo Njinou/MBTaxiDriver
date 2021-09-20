@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>find me</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="20"></rect>
+        <filter x="-85.0%" y="-80.0%" width="270.0%" height="270.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="11" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.665311437   0 0 0 0 0.665311437   0 0 0 0 0.665311437  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-" transform="translate(-283.000000, -449.000000)">
+            <g id="find-me" transform="translate(305.000000, 469.000000)">
+                <g id="Rectangle-2-Copy-13">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M20,16 C22.209139,16 24,17.790861 24,20 C24,22.209139 22.209139,24 20,24 C17.790861,24 16,22.209139 16,20 C16,17.790861 17.790861,16 20,16 L20,16 Z M11.05,21 L9,21 L9,19 L11.05,19 C11.5,14.83 14.83,11.5 19,11.05 L19,9 L21,9 L21,11.05 C25.17,11.5 28.5,14.83 28.95,19 L31,19 L31,21 L28.95,21 C28.5,25.17 25.17,28.5 21,28.95 L21,31 L19,31 L19,28.95 C14.83,28.5 11.5,25.17 11.05,21 L11.05,21 Z M20,13 C16.1340068,13 13,16.1340068 13,20 C13,23.8659932 16.1340068,27 20,27 C23.8659932,27 27,23.8659932 27,20 C27,16.1340068 23.8659932,13 20,13 Z" id="Shape" fill="#C3C1C1" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

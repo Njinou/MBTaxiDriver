@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>upload profile</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Log-In-Copy" transform="translate(-129.000000, -86.000000)">
+            <g id="upload-profile" transform="translate(130.000000, 87.000000)">
+                <g id="Group-2">
+                    <circle id="Oval" fill="#454545" cx="50" cy="50" r="50"></circle>
+                    <path d="M50,86 C37.5,86 26.45,79.6 20,70 C20.15,60 40,54.5 50,54.5 C60,54.5 79.85,60 80,70 C73.55,79.6 62.5,86 50,86 L50,86 Z M50,15 C58.2842712,15 65,21.7157288 65,30 C65,38.2842712 58.2842712,45 50,45 C41.7157288,45 35,38.2842712 35,30 C35,21.7157288 41.7157288,15 50,15 L50,15 Z M50,0 C22.3857625,0 0,22.3857625 0,50 C0,63.2608245 5.26784202,75.9785201 14.6446609,85.3553391 C24.0214799,94.732158 36.7391755,100 50,100 C63.2608245,100 75.9785201,94.732158 85.3553391,85.3553391 C94.732158,75.9785201 100,63.2608245 100,50 C100,22.35 77.5,0 50,0 Z" id="Shape" fill="#606060" fill-rule="nonzero"></path>
+                    <path d="M52,40 L52,44 L48,44 L48,40 L45,40 L50,35 L55,40 L52,40 Z M57.35,37.03 C56.67,33.59 53.64,31 50,31 C47.11,31 44.6,32.64 43.35,35.03 C40.34,35.36 38,37.9 38,41 C38,44.3137085 40.6862915,47 44,47 L57,47 C58.3260824,47 59.597852,46.4732158 60.5355339,45.5355339 C61.4732158,44.597852 62,43.3260824 62,42 C62,39.36 59.95,37.22 57.35,37.03 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <text id="Upload-Photo" font-family="Montserrat-SemiBold, Montserrat SemiBold" font-size="10" font-weight="500" letter-spacing="-0.16" fill="#FFFFFF">
+                        <tspan x="15.515" y="62">Upload Photo</tspan>
+                    </text>
+                </g>
+                <circle id="Oval" stroke="#979797" stroke-width="2" cx="50" cy="50" r="50"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

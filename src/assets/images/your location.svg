@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>your location</title>
+    <defs>
+        <filter x="-76.8%" y="-76.8%" width="253.6%" height="253.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0115685316   0 0 0 0 0.612630208   0 0 0 0 0.29291655  0 0 0 0.478310752 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-" transform="translate(-240.000000, -290.000000)">
+            <g id="your-location" transform="translate(247.000000, 297.000000)">
+                <circle id="Oval" fill="#67F4A9" opacity="0.396437872" style="mix-blend-mode: multiply;" cx="23" cy="23" r="23"></circle>
+                <g id="Group-Copy" filter="url(#filter-1)" transform="translate(9.000000, 9.000000)">
+                    <circle id="Oval-Copy" fill="#FFFFFF" cx="14" cy="14" r="14"></circle>
+                    <circle id="Oval-Copy" stroke="#5BE39B" stroke-width="1.5" fill="#67F4A9" cx="14" cy="14" r="7.75"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

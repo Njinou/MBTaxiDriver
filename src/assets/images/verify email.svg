@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="48px" viewBox="0 0 60 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>verify email</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sign-up-confirmation" transform="translate(-150.000000, -157.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke="#222222" stroke-width="2">
+            <path d="M156.75,158 L202.75,158 C205.925637,158 208.5,160.574363 208.5,163.75 L208.5,198.25 C208.5,201.425637 205.925637,204 202.75,204 L156.75,204 C153.55875,204 151,201.4125 151,198.25 L151,163.75 C151,160.55875 153.55875,158 156.75,158 L156.75,158 Z M179.75,178.125 L202.75,163.75 L156.75,163.75 L179.75,178.125 L179.75,178.125 Z M156.75,198.25 L202.75,198.25 L202.75,170.56375 L179.75,184.91 L156.75,170.56375 L156.75,198.25 Z" id="verify-email"></path>
+        </g>
+    </g>
+</svg>
