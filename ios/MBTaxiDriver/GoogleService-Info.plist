@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>459934870171-lj3c900crmqk1hnukp2pv9hdj8k81m2n.apps.googleusercontent.com</string>
+	<string>894926579462-7p9tnsgj6c01s1gk5ff53htu79iliv91.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.459934870171-lj3c900crmqk1hnukp2pv9hdj8k81m2n</string>
+	<string>com.googleusercontent.apps.894926579462-7p9tnsgj6c01s1gk5ff53htu79iliv91</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>894926579462-228m72p6qhne6682p2394vrj9o5f4jma.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBERjAj4-xM64E_SzNkSYS7hVSFGK_eeDQ</string>
+	<string>AIzaSyBHDTj6W661ol3WkTbrFSqoVrkdKnidliQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>459934870171</string>
+	<string>894926579462</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>org.mbouendeu.MBTaxiDriver</string>
 	<key>PROJECT_ID</key>
-	<string>mbtaxidriver</string>
+	<string>mbtaxi2021</string>
 	<key>STORAGE_BUCKET</key>
-	<string>mbtaxidriver.appspot.com</string>
+	<string>mbtaxi2021.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:459934870171:ios:f7c010ceafd0b8bc01f43e</string>
+	<string>1:894926579462:ios:2273c83173c0c7a715a087</string>
+	<key>DATABASE_URL</key>
+	<string>https://mbtaxi2021-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

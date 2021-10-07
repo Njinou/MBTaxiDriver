@@ -5,6 +5,10 @@ platform :ios, '11.0'
 permissions_path = '../node_modules/react-native-permissions/ios'
 
 target 'MBTaxiDriver' do
+  # React Native Maps dependencies
+rn_maps_path = '../node_modules/react-native-maps'
+pod 'react-native-google-maps', :path => rn_maps_path
+
   config = use_native_modules!
 
   use_react_native!(

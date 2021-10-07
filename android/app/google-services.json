@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "459934870171",
+    "firebase_url": "https://mbtaxidriver-default-rtdb.firebaseio.com",
     "project_id": "mbtaxidriver",
     "storage_bucket": "mbtaxidriver.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "459934870171-2p84r71tmt3bidi21mgur38memj5c2n2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mbtaxidriver",
+            "certificate_hash": "19e251be718e4610b357cf13aa24d7cef0b5a310"
+          }
+        },
         {
           "client_id": "459934870171-a2e96c9vfcamaks7l64dbnb8t6pkg231.apps.googleusercontent.com",
           "client_type": 3
