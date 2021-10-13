@@ -384,7 +384,8 @@ const showDatePicker = () => {
   reference.child(newVal.key).set(ride).then( (res) => {
     console.log("Ride save !!!!!",res);
     //select
-     props.navigation.navigate('select');
+    // props.navigation.navigate('select');
+     props.navigation.navigate('select',{destination:destination,location:location },)
     }
     )
     .catch (error => console('error is ...',error))

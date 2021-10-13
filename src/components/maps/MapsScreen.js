@@ -29,6 +29,7 @@ const MapsScreen = () => {
     const [backgroundColor,setBackgroundColor] = useState('#fff');
     const [distance,setDistance] = useState(0);
     const [timing,setTiming] = useState(0);
+    const [trajectoryDriver, setTrajectoryDriver]= useState([])
 
 
     const [featuresCollection,setFeaturesCollection] = useState([]);
@@ -101,7 +102,12 @@ Geocoder.from(41.89, 12.49)
             database().ref('/drivers/position/')
             .child(auth().currentUser.uid)
             .set ('4+0394,9+687')//(auth().currentUser.uid)
-            //.push() //(JSON.stringify(latitude).replace('.','+') +','+JSON.stringify(longitude).replace('.','+'))     
+            //.push() //(JSON.stringify(latitude).replace('.','+') +','+JSON.stringify(longitude).replace('.','+'))  
+
+            database().ref('/drivers/availablePl/')
+            .child(auth().currentUser.uid)
+            .set (5)
+            
           },
           error => {
             console.log(error.code, error.message)
@@ -267,7 +273,7 @@ function sortingArray (a,b){
         if (!points) throw new Error("points is required");
         
         let finalArray = [];
-        let arraySize = points.length<=10? points.length: 10;
+        let arraySize = points.features.length<=10? points.features.length: 10;
         var neighborArray =  new Array(arraySize);
         for (j=0 ; j <neighborArray.length; j++){
 
@@ -377,6 +383,7 @@ hashCode = s => s.split('').reduce((a,b)=>{a=((a<<5)-a)+b.charCodeAt(0);return a
           <MapViewDirections
           //{{latitude: location.latitude, longitude: location.longitude}}
           // Latitude :     Yassa Longitude :   
+               // waypoints={ (trajectoryDriver.length > 2) ? trajectoryDriver.slice(1, -1): undefined}
                 origin= {{latitude: 3.9708, longitude: 9.8132}}
                 destination={{latitude: 4.0394, longitude: 9.687}}
                 apikey={GOOGLE_MAPS_API_KEY}
