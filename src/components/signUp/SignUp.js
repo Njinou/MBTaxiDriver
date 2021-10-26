@@ -239,7 +239,7 @@ return (
             <TaxiText text={error} styleText={{marginBottom:5,fontSize:18,color:'red',fontWeight:'normal'}}/>
 
             <TaxiTextInput returnKeyType="next" placeholder={textKeys.fullName} func={settingUsername} value={username}  onSubmitEditing={() => {phoneNumberInput.current.focus(); }}/>
-            <TaxiTextInput returnKeyType="next" placeholder={textKeys.phoneNumber} func={settingPhoneNumber} value={phoneNumber} keyboardType='numeric' ref={phoneNumberInput} onSubmitEditing={() => {emailInput.current.focus(); }} />
+            <TaxiTextInput returnKeyType="next" placeholder={textKeys.phoneNumber} func={settingPhoneNumber} value={phoneNumber} keyboardType='phone-pad' ref={phoneNumberInput} onSubmitEditing={() => {emailInput.current.focus(); }} />
             <TaxiTextInput returnKeyType="next" placeholder={textKeys.email} func={settingEmail} value={email} keyboardType='email-address'  ref={emailInput} onSubmitEditing={() => {passwordInput.current.focus();}}/>
             <TaxiTextInput returnKeyType="next" placeholder={textKeys.password} func={settingPassword} value={password} secureTextEntry={true}  blurOnSubmit={false}  ref={passwordInput} onSubmitEditing={() => {confirmPasswordInput.current.focus()}} />
             <TaxiText text={passwordMessage} styleText={{marginBottom:5,fontSize:16,color:'red',fontWeight:'normal'}}/>
