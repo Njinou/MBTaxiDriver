@@ -13,7 +13,109 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		276176E09D28103A140D96BF /* libPods-MBTaxiDriver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD45CCC8B97DFB345B737138 /* libPods-MBTaxiDriver.a */; };
 		5EC2FA32DEE70D5835E763F3 /* libPods-MBTaxiDriver-MBTaxiDriverTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 830CC4E5E08E110E130FC5B4 /* libPods-MBTaxiDriver-MBTaxiDriverTests.a */; };
-		5F0B2E2A26F923ED00701692 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B2E2926F923ED00701692 /* GoogleService-Info.plist */; };
+		5F205B72270912AC00AC5C4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F205B71270912AC00AC5C4F /* GoogleService-Info.plist */; };
+		5F4D924D26F9A80600059A9F /* libCocoaAsyncSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D91F926F9A80600059A9F /* libCocoaAsyncSocket.a */; };
+		5F4D924E26F9A80600059A9F /* libDoubleConversion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D91FA26F9A80600059A9F /* libDoubleConversion.a */; };
+		5F4D924F26F9A80600059A9F /* libFBReactNativeSpec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D91FB26F9A80600059A9F /* libFBReactNativeSpec.a */; };
+		5F4D925026F9A80600059A9F /* libFirebaseAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D91FC26F9A80600059A9F /* libFirebaseAuth.a */; };
+		5F4D925126F9A80600059A9F /* libFirebaseCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D91FD26F9A80600059A9F /* libFirebaseCore.a */; };
+		5F4D925226F9A80600059A9F /* libFirebaseCoreDiagnostics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D91FE26F9A80600059A9F /* libFirebaseCoreDiagnostics.a */; };
+		5F4D925326F9A80600059A9F /* libFirebaseDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D91FF26F9A80600059A9F /* libFirebaseDatabase.a */; };
+		5F4D925426F9A80600059A9F /* libFirebaseInstallations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920026F9A80600059A9F /* libFirebaseInstallations.a */; };
+		5F4D925526F9A80600059A9F /* libFirebaseStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920126F9A80600059A9F /* libFirebaseStorage.a */; };
+		5F4D925626F9A80600059A9F /* libFlipper-Boost-iOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920226F9A80600059A9F /* libFlipper-Boost-iOSX.a */; };
+		5F4D925726F9A80600059A9F /* libFlipper-Fmt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920326F9A80600059A9F /* libFlipper-Fmt.a */; };
+		5F4D925826F9A80600059A9F /* libFlipper-Folly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920426F9A80600059A9F /* libFlipper-Folly.a */; };
+		5F4D925926F9A80600059A9F /* libFlipper-Glog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920526F9A80600059A9F /* libFlipper-Glog.a */; };
+		5F4D925A26F9A80600059A9F /* libFlipper-PeerTalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920626F9A80600059A9F /* libFlipper-PeerTalk.a */; };
+		5F4D925B26F9A80600059A9F /* libFlipper-RSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920726F9A80600059A9F /* libFlipper-RSocket.a */; };
+		5F4D925C26F9A80600059A9F /* libFlipper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920826F9A80600059A9F /* libFlipper.a */; };
+		5F4D925D26F9A80600059A9F /* libFlipperKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920926F9A80600059A9F /* libFlipperKit.a */; };
+		5F4D925E26F9A80600059A9F /* libfmt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920A26F9A80600059A9F /* libfmt.a */; };
+		5F4D925F26F9A80600059A9F /* libglog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920B26F9A80600059A9F /* libglog.a */; };
+		5F4D926026F9A80600059A9F /* libGoogleDataTransport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920C26F9A80600059A9F /* libGoogleDataTransport.a */; };
+		5F4D926126F9A80700059A9F /* libGoogleUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920D26F9A80600059A9F /* libGoogleUtilities.a */; };
+		5F4D926226F9A80700059A9F /* libGTMSessionFetcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920E26F9A80600059A9F /* libGTMSessionFetcher.a */; };
+		5F4D926326F9A80700059A9F /* libleveldb-library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D920F26F9A80600059A9F /* libleveldb-library.a */; };
+		5F4D926426F9A80700059A9F /* liblibevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921026F9A80600059A9F /* liblibevent.a */; };
+		5F4D926526F9A80700059A9F /* libnanopb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921126F9A80600059A9F /* libnanopb.a */; };
+		5F4D926626F9A80700059A9F /* libPermission-AppTrackingTransparency.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921226F9A80600059A9F /* libPermission-AppTrackingTransparency.a */; };
+		5F4D926726F9A80700059A9F /* libPermission-BluetoothPeripheral.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921326F9A80600059A9F /* libPermission-BluetoothPeripheral.a */; };
+		5F4D926826F9A80700059A9F /* libPermission-Calendars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921426F9A80600059A9F /* libPermission-Calendars.a */; };
+		5F4D926926F9A80700059A9F /* libPermission-Camera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921526F9A80600059A9F /* libPermission-Camera.a */; };
+		5F4D926A26F9A80700059A9F /* libPermission-Contacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921626F9A80600059A9F /* libPermission-Contacts.a */; };
+		5F4D926B26F9A80700059A9F /* libPermission-FaceID.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921726F9A80600059A9F /* libPermission-FaceID.a */; };
+		5F4D926C26F9A80700059A9F /* libPermission-LocationAccuracy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921826F9A80600059A9F /* libPermission-LocationAccuracy.a */; };
+		5F4D926D26F9A80700059A9F /* libPermission-LocationAlways.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921926F9A80600059A9F /* libPermission-LocationAlways.a */; };
+		5F4D926E26F9A80700059A9F /* libPermission-LocationWhenInUse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921A26F9A80600059A9F /* libPermission-LocationWhenInUse.a */; };
+		5F4D926F26F9A80700059A9F /* libPermission-MediaLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921B26F9A80600059A9F /* libPermission-MediaLibrary.a */; };
+		5F4D927026F9A80700059A9F /* libPermission-Microphone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921C26F9A80600059A9F /* libPermission-Microphone.a */; };
+		5F4D927126F9A80700059A9F /* libPermission-Motion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921D26F9A80600059A9F /* libPermission-Motion.a */; };
+		5F4D927226F9A80700059A9F /* libPermission-Notifications.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921E26F9A80600059A9F /* libPermission-Notifications.a */; };
+		5F4D927326F9A80700059A9F /* libPermission-PhotoLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D921F26F9A80600059A9F /* libPermission-PhotoLibrary.a */; };
+		5F4D927426F9A80700059A9F /* libPermission-PhotoLibraryAddOnly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922026F9A80600059A9F /* libPermission-PhotoLibraryAddOnly.a */; };
+		5F4D927526F9A80700059A9F /* libPermission-Reminders.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922126F9A80600059A9F /* libPermission-Reminders.a */; };
+		5F4D927626F9A80700059A9F /* libPermission-Siri.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922226F9A80600059A9F /* libPermission-Siri.a */; };
+		5F4D927726F9A80700059A9F /* libPermission-SpeechRecognition.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922326F9A80600059A9F /* libPermission-SpeechRecognition.a */; };
+		5F4D927826F9A80800059A9F /* libPermission-StoreKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922426F9A80600059A9F /* libPermission-StoreKit.a */; };
+		5F4D927A26F9A80800059A9F /* libPods-MBTaxiDriver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922626F9A80600059A9F /* libPods-MBTaxiDriver.a */; };
+		5F4D927B26F9A80800059A9F /* libPromisesObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922726F9A80600059A9F /* libPromisesObjC.a */; };
+		5F4D927C26F9A80800059A9F /* libRCT-Folly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922826F9A80600059A9F /* libRCT-Folly.a */; };
+		5F4D927D26F9A80800059A9F /* libRCTTypeSafety.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922926F9A80600059A9F /* libRCTTypeSafety.a */; };
+		5F4D927E26F9A80800059A9F /* libReact-Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922A26F9A80600059A9F /* libReact-Core.a */; };
+		5F4D927F26F9A80800059A9F /* libReact-CoreModules.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922B26F9A80600059A9F /* libReact-CoreModules.a */; };
+		5F4D928026F9A80800059A9F /* libReact-cxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922C26F9A80600059A9F /* libReact-cxxreact.a */; };
+		5F4D928126F9A80800059A9F /* libReact-jsi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922D26F9A80600059A9F /* libReact-jsi.a */; };
+		5F4D928226F9A80800059A9F /* libReact-jsiexecutor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922E26F9A80600059A9F /* libReact-jsiexecutor.a */; };
+		5F4D928326F9A80800059A9F /* libReact-jsinspector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D922F26F9A80600059A9F /* libReact-jsinspector.a */; };
+		5F4D928426F9A80800059A9F /* libreact-native-geolocation-service.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923026F9A80600059A9F /* libreact-native-geolocation-service.a */; };
+		5F4D928526F9A80800059A9F /* libreact-native-image-picker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923126F9A80600059A9F /* libreact-native-image-picker.a */; };
+		5F4D928626F9A80900059A9F /* libreact-native-maps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923226F9A80600059A9F /* libreact-native-maps.a */; };
+		5F4D928726F9A80900059A9F /* libreact-native-safe-area-context.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923326F9A80600059A9F /* libreact-native-safe-area-context.a */; };
+		5F4D928826F9A80900059A9F /* libreact-native-voice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923426F9A80600059A9F /* libreact-native-voice.a */; };
+		5F4D928926F9A80900059A9F /* libReact-perflogger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923526F9A80600059A9F /* libReact-perflogger.a */; };
+		5F4D928A26F9A80900059A9F /* libReact-RCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923626F9A80600059A9F /* libReact-RCTAnimation.a */; };
+		5F4D928B26F9A80900059A9F /* libReact-RCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923726F9A80600059A9F /* libReact-RCTBlob.a */; };
+		5F4D928C26F9A80900059A9F /* libReact-RCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923826F9A80600059A9F /* libReact-RCTImage.a */; };
+		5F4D928D26F9A80900059A9F /* libReact-RCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923926F9A80600059A9F /* libReact-RCTLinking.a */; };
+		5F4D928E26F9A80900059A9F /* libReact-RCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923A26F9A80600059A9F /* libReact-RCTNetwork.a */; };
+		5F4D928F26F9A80900059A9F /* libReact-RCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923B26F9A80600059A9F /* libReact-RCTSettings.a */; };
+		5F4D929026F9A80900059A9F /* libReact-RCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923C26F9A80600059A9F /* libReact-RCTText.a */; };
+		5F4D929126F9A80900059A9F /* libReact-RCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923D26F9A80600059A9F /* libReact-RCTVibration.a */; };
+		5F4D929226F9A80A00059A9F /* libReactCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923E26F9A80600059A9F /* libReactCommon.a */; };
+		5F4D929326F9A80A00059A9F /* libRNCCheckbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D923F26F9A80600059A9F /* libRNCCheckbox.a */; };
+		5F4D929426F9A80A00059A9F /* libRNCMaskedView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924026F9A80600059A9F /* libRNCMaskedView.a */; };
+		5F4D929526F9A80A00059A9F /* libRNCPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924126F9A80600059A9F /* libRNCPicker.a */; };
+		5F4D929626F9A80A00059A9F /* libRNDateTimePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924226F9A80600059A9F /* libRNDateTimePicker.a */; };
+		5F4D929726F9A80A00059A9F /* libRNFBApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924326F9A80600059A9F /* libRNFBApp.a */; };
+		5F4D929826F9A80A00059A9F /* libRNFBAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924426F9A80600059A9F /* libRNFBAuth.a */; };
+		5F4D929926F9A80A00059A9F /* libRNFBDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924526F9A80600059A9F /* libRNFBDatabase.a */; };
+		5F4D929A26F9A80A00059A9F /* libRNFBStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924626F9A80600059A9F /* libRNFBStorage.a */; };
+		5F4D929B26F9A80A00059A9F /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924726F9A80600059A9F /* libRNGestureHandler.a */; };
+		5F4D929C26F9A80B00059A9F /* libRNPermissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924826F9A80600059A9F /* libRNPermissions.a */; };
+		5F4D929D26F9A80B00059A9F /* libRNReanimated.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924926F9A80600059A9F /* libRNReanimated.a */; };
+		5F4D929E26F9A80B00059A9F /* libRNScreens.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924A26F9A80600059A9F /* libRNScreens.a */; };
+		5F4D929F26F9A80B00059A9F /* libYoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924B26F9A80600059A9F /* libYoga.a */; };
+		5F4D92A026F9A80B00059A9F /* libYogaKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4D924C26F9A80600059A9F /* libYogaKit.a */; };
+		5F4D92A726F9A9D300059A9F /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91D426F9A6F000059A9F /* Montserrat-Black.ttf */; };
+		5F4D92A826F9A9D300059A9F /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91DE26F9A6F000059A9F /* Montserrat-BlackItalic.ttf */; };
+		5F4D92A926F9A9D300059A9F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91E026F9A6F000059A9F /* Montserrat-Bold.ttf */; };
+		5F4D92AA26F9A9D300059A9F /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91D326F9A6F000059A9F /* Montserrat-BoldItalic.ttf */; };
+		5F4D92AB26F9A9D300059A9F /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91D926F9A6F000059A9F /* Montserrat-ExtraBold.ttf */; };
+		5F4D92AC26F9A9D300059A9F /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91D826F9A6F000059A9F /* Montserrat-ExtraBoldItalic.ttf */; };
+		5F4D92AD26F9A9D300059A9F /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91D226F9A6F000059A9F /* Montserrat-ExtraLight.ttf */; };
+		5F4D92AE26F9A9D300059A9F /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91D126F9A6EF00059A9F /* Montserrat-ExtraLightItalic.ttf */; };
+		5F4D92AF26F9A9D300059A9F /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91E226F9A6F000059A9F /* Montserrat-Italic.ttf */; };
+		5F4D92B026F9A9D300059A9F /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91E326F9A6F000059A9F /* Montserrat-Light.ttf */; };
+		5F4D92B126F9A9D300059A9F /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91DD26F9A6F000059A9F /* Montserrat-LightItalic.ttf */; };
+		5F4D92B226F9A9D300059A9F /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91D726F9A6F000059A9F /* Montserrat-Medium.ttf */; };
+		5F4D92B326F9A9D300059A9F /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91D626F9A6F000059A9F /* Montserrat-MediumItalic.ttf */; };
+		5F4D92B426F9A9D300059A9F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91DC26F9A6F000059A9F /* Montserrat-Regular.ttf */; };
+		5F4D92B526F9A9D300059A9F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91D526F9A6F000059A9F /* Montserrat-SemiBold.ttf */; };
+		5F4D92B626F9A9D300059A9F /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91DA26F9A6F000059A9F /* Montserrat-SemiBoldItalic.ttf */; };
+		5F4D92B726F9A9D300059A9F /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91DB26F9A6F000059A9F /* Montserrat-Thin.ttf */; };
+		5F4D92B826F9A9D300059A9F /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91DF26F9A6F000059A9F /* Montserrat-ThinItalic.ttf */; };
+		5F4D92B926F9A9D300059A9F /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F4D91E126F9A6F000059A9F /* OFL.txt */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +141,109 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MBTaxiDriver/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MBTaxiDriver/main.m; sourceTree = "<group>"; };
 		3A7153AB7C5D468181E08F6D /* Pods-MBTaxiDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTaxiDriver.release.xcconfig"; path = "Target Support Files/Pods-MBTaxiDriver/Pods-MBTaxiDriver.release.xcconfig"; sourceTree = "<group>"; };
-		5F0B2E2926F923ED00701692 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "MBTaxiDriver/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F205B71270912AC00AC5C4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "MBTaxiDriver/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F4D91D126F9A6EF00059A9F /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		5F4D91D226F9A6F000059A9F /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraLight.ttf"; path = "../src/assets/fonts/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		5F4D91D326F9A6F000059A9F /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-BoldItalic.ttf"; path = "../src/assets/fonts/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5F4D91D426F9A6F000059A9F /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.ttf"; path = "../src/assets/fonts/Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		5F4D91D526F9A6F000059A9F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.ttf"; path = "../src/assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		5F4D91D626F9A6F000059A9F /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-MediumItalic.ttf"; path = "../src/assets/fonts/Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5F4D91D726F9A6F000059A9F /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.ttf"; path = "../src/assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		5F4D91D826F9A6F000059A9F /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		5F4D91D926F9A6F000059A9F /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.ttf"; path = "../src/assets/fonts/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5F4D91DA26F9A6F000059A9F /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		5F4D91DB26F9A6F000059A9F /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Thin.ttf"; path = "../src/assets/fonts/Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		5F4D91DC26F9A6F000059A9F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		5F4D91DD26F9A6F000059A9F /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-LightItalic.ttf"; path = "../src/assets/fonts/Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		5F4D91DE26F9A6F000059A9F /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-BlackItalic.ttf"; path = "../src/assets/fonts/Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5F4D91DF26F9A6F000059A9F /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ThinItalic.ttf"; path = "../src/assets/fonts/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5F4D91E026F9A6F000059A9F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		5F4D91E126F9A6F000059A9F /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = OFL.txt; path = ../src/assets/fonts/OFL.txt; sourceTree = "<group>"; };
+		5F4D91E226F9A6F000059A9F /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Italic.ttf"; path = "../src/assets/fonts/Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		5F4D91E326F9A6F000059A9F /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.ttf"; path = "../src/assets/fonts/Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		5F4D91F926F9A80600059A9F /* libCocoaAsyncSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCocoaAsyncSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D91FA26F9A80600059A9F /* libDoubleConversion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDoubleConversion.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D91FB26F9A80600059A9F /* libFBReactNativeSpec.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFBReactNativeSpec.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D91FC26F9A80600059A9F /* libFirebaseAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D91FD26F9A80600059A9F /* libFirebaseCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D91FE26F9A80600059A9F /* libFirebaseCoreDiagnostics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseCoreDiagnostics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D91FF26F9A80600059A9F /* libFirebaseDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920026F9A80600059A9F /* libFirebaseInstallations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseInstallations.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920126F9A80600059A9F /* libFirebaseStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFirebaseStorage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920226F9A80600059A9F /* libFlipper-Boost-iOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-Boost-iOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920326F9A80600059A9F /* libFlipper-Fmt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-Fmt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920426F9A80600059A9F /* libFlipper-Folly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-Folly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920526F9A80600059A9F /* libFlipper-Glog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-Glog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920626F9A80600059A9F /* libFlipper-PeerTalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-PeerTalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920726F9A80600059A9F /* libFlipper-RSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libFlipper-RSocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920826F9A80600059A9F /* libFlipper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFlipper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920926F9A80600059A9F /* libFlipperKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFlipperKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920A26F9A80600059A9F /* libfmt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfmt.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920B26F9A80600059A9F /* libglog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920C26F9A80600059A9F /* libGoogleDataTransport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleDataTransport.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920D26F9A80600059A9F /* libGoogleUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920E26F9A80600059A9F /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGTMSessionFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D920F26F9A80600059A9F /* libleveldb-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libleveldb-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921026F9A80600059A9F /* liblibevent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibevent.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921126F9A80600059A9F /* libnanopb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921226F9A80600059A9F /* libPermission-AppTrackingTransparency.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-AppTrackingTransparency.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921326F9A80600059A9F /* libPermission-BluetoothPeripheral.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-BluetoothPeripheral.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921426F9A80600059A9F /* libPermission-Calendars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-Calendars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921526F9A80600059A9F /* libPermission-Camera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-Camera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921626F9A80600059A9F /* libPermission-Contacts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-Contacts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921726F9A80600059A9F /* libPermission-FaceID.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-FaceID.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921826F9A80600059A9F /* libPermission-LocationAccuracy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-LocationAccuracy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921926F9A80600059A9F /* libPermission-LocationAlways.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-LocationAlways.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921A26F9A80600059A9F /* libPermission-LocationWhenInUse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-LocationWhenInUse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921B26F9A80600059A9F /* libPermission-MediaLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-MediaLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921C26F9A80600059A9F /* libPermission-Microphone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-Microphone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921D26F9A80600059A9F /* libPermission-Motion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-Motion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921E26F9A80600059A9F /* libPermission-Notifications.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-Notifications.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D921F26F9A80600059A9F /* libPermission-PhotoLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-PhotoLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922026F9A80600059A9F /* libPermission-PhotoLibraryAddOnly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-PhotoLibraryAddOnly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922126F9A80600059A9F /* libPermission-Reminders.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-Reminders.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922226F9A80600059A9F /* libPermission-Siri.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-Siri.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922326F9A80600059A9F /* libPermission-SpeechRecognition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-SpeechRecognition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922426F9A80600059A9F /* libPermission-StoreKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPermission-StoreKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922626F9A80600059A9F /* libPods-MBTaxiDriver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-MBTaxiDriver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922726F9A80600059A9F /* libPromisesObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPromisesObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922826F9A80600059A9F /* libRCT-Folly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libRCT-Folly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922926F9A80600059A9F /* libRCTTypeSafety.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTTypeSafety.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922A26F9A80600059A9F /* libReact-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922B26F9A80600059A9F /* libReact-CoreModules.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-CoreModules.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922C26F9A80600059A9F /* libReact-cxxreact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-cxxreact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922D26F9A80600059A9F /* libReact-jsi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922E26F9A80600059A9F /* libReact-jsiexecutor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsiexecutor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D922F26F9A80600059A9F /* libReact-jsinspector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-jsinspector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923026F9A80600059A9F /* libreact-native-geolocation-service.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-geolocation-service.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923126F9A80600059A9F /* libreact-native-image-picker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-image-picker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923226F9A80600059A9F /* libreact-native-maps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-maps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923326F9A80600059A9F /* libreact-native-safe-area-context.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-safe-area-context.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923426F9A80600059A9F /* libreact-native-voice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-voice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923526F9A80600059A9F /* libReact-perflogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-perflogger.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923626F9A80600059A9F /* libReact-RCTAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923726F9A80600059A9F /* libReact-RCTBlob.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTBlob.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923826F9A80600059A9F /* libReact-RCTImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923926F9A80600059A9F /* libReact-RCTLinking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTLinking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923A26F9A80600059A9F /* libReact-RCTNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923B26F9A80600059A9F /* libReact-RCTSettings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTSettings.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923C26F9A80600059A9F /* libReact-RCTText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923D26F9A80600059A9F /* libReact-RCTVibration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTVibration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923E26F9A80600059A9F /* libReactCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReactCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D923F26F9A80600059A9F /* libRNCCheckbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNCCheckbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924026F9A80600059A9F /* libRNCMaskedView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNCMaskedView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924126F9A80600059A9F /* libRNCPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNCPicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924226F9A80600059A9F /* libRNDateTimePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNDateTimePicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924326F9A80600059A9F /* libRNFBApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNFBApp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924426F9A80600059A9F /* libRNFBAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNFBAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924526F9A80600059A9F /* libRNFBDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNFBDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924626F9A80600059A9F /* libRNFBStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNFBStorage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924726F9A80600059A9F /* libRNGestureHandler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNGestureHandler.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924826F9A80600059A9F /* libRNPermissions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNPermissions.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924926F9A80600059A9F /* libRNReanimated.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNReanimated.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924A26F9A80600059A9F /* libRNScreens.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNScreens.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924B26F9A80600059A9F /* libYoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libYoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4D924C26F9A80600059A9F /* libYogaKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libYogaKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A62E25B6857DF638330D9CF /* Pods-MBTaxiDriver-MBTaxiDriverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTaxiDriver-MBTaxiDriverTests.debug.xcconfig"; path = "Target Support Files/Pods-MBTaxiDriver-MBTaxiDriverTests/Pods-MBTaxiDriver-MBTaxiDriverTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MBTaxiDriver/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82BEA06700ECC8D36C43E163 /* Pods-MBTaxiDriver-MBTaxiDriverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTaxiDriver-MBTaxiDriverTests.release.xcconfig"; path = "Target Support Files/Pods-MBTaxiDriver-MBTaxiDriverTests/Pods-MBTaxiDriver-MBTaxiDriverTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,7 +265,90 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4D929326F9A80A00059A9F /* libRNCCheckbox.a in Frameworks */,
+				5F4D929126F9A80900059A9F /* libReact-RCTVibration.a in Frameworks */,
+				5F4D929926F9A80A00059A9F /* libRNFBDatabase.a in Frameworks */,
+				5F4D926C26F9A80700059A9F /* libPermission-LocationAccuracy.a in Frameworks */,
+				5F4D925026F9A80600059A9F /* libFirebaseAuth.a in Frameworks */,
+				5F4D926226F9A80700059A9F /* libGTMSessionFetcher.a in Frameworks */,
+				5F4D92A026F9A80B00059A9F /* libYogaKit.a in Frameworks */,
+				5F4D928226F9A80800059A9F /* libReact-jsiexecutor.a in Frameworks */,
+				5F4D927626F9A80700059A9F /* libPermission-Siri.a in Frameworks */,
+				5F4D926326F9A80700059A9F /* libleveldb-library.a in Frameworks */,
+				5F4D929026F9A80900059A9F /* libReact-RCTText.a in Frameworks */,
+				5F4D925E26F9A80600059A9F /* libfmt.a in Frameworks */,
+				5F4D927B26F9A80800059A9F /* libPromisesObjC.a in Frameworks */,
+				5F4D928E26F9A80900059A9F /* libReact-RCTNetwork.a in Frameworks */,
+				5F4D928A26F9A80900059A9F /* libReact-RCTAnimation.a in Frameworks */,
+				5F4D926826F9A80700059A9F /* libPermission-Calendars.a in Frameworks */,
+				5F4D927826F9A80800059A9F /* libPermission-StoreKit.a in Frameworks */,
+				5F4D928426F9A80800059A9F /* libreact-native-geolocation-service.a in Frameworks */,
+				5F4D925626F9A80600059A9F /* libFlipper-Boost-iOSX.a in Frameworks */,
+				5F4D925826F9A80600059A9F /* libFlipper-Folly.a in Frameworks */,
+				5F4D925326F9A80600059A9F /* libFirebaseDatabase.a in Frameworks */,
+				5F4D926F26F9A80700059A9F /* libPermission-MediaLibrary.a in Frameworks */,
+				5F4D927E26F9A80800059A9F /* libReact-Core.a in Frameworks */,
+				5F4D926A26F9A80700059A9F /* libPermission-Contacts.a in Frameworks */,
+				5F4D929B26F9A80A00059A9F /* libRNGestureHandler.a in Frameworks */,
+				5F4D928626F9A80900059A9F /* libreact-native-maps.a in Frameworks */,
+				5F4D925B26F9A80600059A9F /* libFlipper-RSocket.a in Frameworks */,
 				276176E09D28103A140D96BF /* libPods-MBTaxiDriver.a in Frameworks */,
+				5F4D929626F9A80A00059A9F /* libRNDateTimePicker.a in Frameworks */,
+				5F4D928526F9A80800059A9F /* libreact-native-image-picker.a in Frameworks */,
+				5F4D926726F9A80700059A9F /* libPermission-BluetoothPeripheral.a in Frameworks */,
+				5F4D927126F9A80700059A9F /* libPermission-Motion.a in Frameworks */,
+				5F4D927C26F9A80800059A9F /* libRCT-Folly.a in Frameworks */,
+				5F4D927026F9A80700059A9F /* libPermission-Microphone.a in Frameworks */,
+				5F4D928C26F9A80900059A9F /* libReact-RCTImage.a in Frameworks */,
+				5F4D928D26F9A80900059A9F /* libReact-RCTLinking.a in Frameworks */,
+				5F4D927526F9A80700059A9F /* libPermission-Reminders.a in Frameworks */,
+				5F4D928B26F9A80900059A9F /* libReact-RCTBlob.a in Frameworks */,
+				5F4D928826F9A80900059A9F /* libreact-native-voice.a in Frameworks */,
+				5F4D925726F9A80600059A9F /* libFlipper-Fmt.a in Frameworks */,
+				5F4D926626F9A80700059A9F /* libPermission-AppTrackingTransparency.a in Frameworks */,
+				5F4D929E26F9A80B00059A9F /* libRNScreens.a in Frameworks */,
+				5F4D926B26F9A80700059A9F /* libPermission-FaceID.a in Frameworks */,
+				5F4D929426F9A80A00059A9F /* libRNCMaskedView.a in Frameworks */,
+				5F4D926D26F9A80700059A9F /* libPermission-LocationAlways.a in Frameworks */,
+				5F4D928326F9A80800059A9F /* libReact-jsinspector.a in Frameworks */,
+				5F4D928726F9A80900059A9F /* libreact-native-safe-area-context.a in Frameworks */,
+				5F4D929A26F9A80A00059A9F /* libRNFBStorage.a in Frameworks */,
+				5F4D925D26F9A80600059A9F /* libFlipperKit.a in Frameworks */,
+				5F4D925226F9A80600059A9F /* libFirebaseCoreDiagnostics.a in Frameworks */,
+				5F4D925526F9A80600059A9F /* libFirebaseStorage.a in Frameworks */,
+				5F4D927326F9A80700059A9F /* libPermission-PhotoLibrary.a in Frameworks */,
+				5F4D924F26F9A80600059A9F /* libFBReactNativeSpec.a in Frameworks */,
+				5F4D929C26F9A80B00059A9F /* libRNPermissions.a in Frameworks */,
+				5F4D929D26F9A80B00059A9F /* libRNReanimated.a in Frameworks */,
+				5F4D925C26F9A80600059A9F /* libFlipper.a in Frameworks */,
+				5F4D925926F9A80600059A9F /* libFlipper-Glog.a in Frameworks */,
+				5F4D927426F9A80700059A9F /* libPermission-PhotoLibraryAddOnly.a in Frameworks */,
+				5F4D927A26F9A80800059A9F /* libPods-MBTaxiDriver.a in Frameworks */,
+				5F4D925426F9A80600059A9F /* libFirebaseInstallations.a in Frameworks */,
+				5F4D926426F9A80700059A9F /* liblibevent.a in Frameworks */,
+				5F4D926026F9A80600059A9F /* libGoogleDataTransport.a in Frameworks */,
+				5F4D926526F9A80700059A9F /* libnanopb.a in Frameworks */,
+				5F4D928126F9A80800059A9F /* libReact-jsi.a in Frameworks */,
+				5F4D927726F9A80700059A9F /* libPermission-SpeechRecognition.a in Frameworks */,
+				5F4D927226F9A80700059A9F /* libPermission-Notifications.a in Frameworks */,
+				5F4D927D26F9A80800059A9F /* libRCTTypeSafety.a in Frameworks */,
+				5F4D924D26F9A80600059A9F /* libCocoaAsyncSocket.a in Frameworks */,
+				5F4D929826F9A80A00059A9F /* libRNFBAuth.a in Frameworks */,
+				5F4D926126F9A80700059A9F /* libGoogleUtilities.a in Frameworks */,
+				5F4D928026F9A80800059A9F /* libReact-cxxreact.a in Frameworks */,
+				5F4D929526F9A80A00059A9F /* libRNCPicker.a in Frameworks */,
+				5F4D928926F9A80900059A9F /* libReact-perflogger.a in Frameworks */,
+				5F4D929226F9A80A00059A9F /* libReactCommon.a in Frameworks */,
+				5F4D929726F9A80A00059A9F /* libRNFBApp.a in Frameworks */,
+				5F4D925F26F9A80600059A9F /* libglog.a in Frameworks */,
+				5F4D927F26F9A80800059A9F /* libReact-CoreModules.a in Frameworks */,
+				5F4D924E26F9A80600059A9F /* libDoubleConversion.a in Frameworks */,
+				5F4D925A26F9A80600059A9F /* libFlipper-PeerTalk.a in Frameworks */,
+				5F4D925126F9A80600059A9F /* libFirebaseCore.a in Frameworks */,
+				5F4D926E26F9A80700059A9F /* libPermission-LocationWhenInUse.a in Frameworks */,
+				5F4D928F26F9A80900059A9F /* libReact-RCTSettings.a in Frameworks */,
+				5F4D926926F9A80700059A9F /* libPermission-Camera.a in Frameworks */,
+				5F4D929F26F9A80B00059A9F /* libYoga.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +375,7 @@
 		13B07FAE1A68108700A75B9A /* MBTaxiDriver */ = {
 			isa = PBXGroup;
 			children = (
-				5F0B2E2926F923ED00701692 /* GoogleService-Info.plist */,
+				5F205B71270912AC00AC5C4F /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -102,11 +389,101 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F4D91F926F9A80600059A9F /* libCocoaAsyncSocket.a */,
+				5F4D91FA26F9A80600059A9F /* libDoubleConversion.a */,
+				5F4D91FB26F9A80600059A9F /* libFBReactNativeSpec.a */,
+				5F4D91FC26F9A80600059A9F /* libFirebaseAuth.a */,
+				5F4D91FD26F9A80600059A9F /* libFirebaseCore.a */,
+				5F4D91FE26F9A80600059A9F /* libFirebaseCoreDiagnostics.a */,
+				5F4D91FF26F9A80600059A9F /* libFirebaseDatabase.a */,
+				5F4D920026F9A80600059A9F /* libFirebaseInstallations.a */,
+				5F4D920126F9A80600059A9F /* libFirebaseStorage.a */,
+				5F4D920226F9A80600059A9F /* libFlipper-Boost-iOSX.a */,
+				5F4D920326F9A80600059A9F /* libFlipper-Fmt.a */,
+				5F4D920426F9A80600059A9F /* libFlipper-Folly.a */,
+				5F4D920526F9A80600059A9F /* libFlipper-Glog.a */,
+				5F4D920626F9A80600059A9F /* libFlipper-PeerTalk.a */,
+				5F4D920726F9A80600059A9F /* libFlipper-RSocket.a */,
+				5F4D920826F9A80600059A9F /* libFlipper.a */,
+				5F4D920926F9A80600059A9F /* libFlipperKit.a */,
+				5F4D920A26F9A80600059A9F /* libfmt.a */,
+				5F4D920B26F9A80600059A9F /* libglog.a */,
+				5F4D920C26F9A80600059A9F /* libGoogleDataTransport.a */,
+				5F4D920D26F9A80600059A9F /* libGoogleUtilities.a */,
+				5F4D920E26F9A80600059A9F /* libGTMSessionFetcher.a */,
+				5F4D920F26F9A80600059A9F /* libleveldb-library.a */,
+				5F4D921026F9A80600059A9F /* liblibevent.a */,
+				5F4D921126F9A80600059A9F /* libnanopb.a */,
+				5F4D921226F9A80600059A9F /* libPermission-AppTrackingTransparency.a */,
+				5F4D921326F9A80600059A9F /* libPermission-BluetoothPeripheral.a */,
+				5F4D921426F9A80600059A9F /* libPermission-Calendars.a */,
+				5F4D921526F9A80600059A9F /* libPermission-Camera.a */,
+				5F4D921626F9A80600059A9F /* libPermission-Contacts.a */,
+				5F4D921726F9A80600059A9F /* libPermission-FaceID.a */,
+				5F4D921826F9A80600059A9F /* libPermission-LocationAccuracy.a */,
+				5F4D921926F9A80600059A9F /* libPermission-LocationAlways.a */,
+				5F4D921A26F9A80600059A9F /* libPermission-LocationWhenInUse.a */,
+				5F4D921B26F9A80600059A9F /* libPermission-MediaLibrary.a */,
+				5F4D921C26F9A80600059A9F /* libPermission-Microphone.a */,
+				5F4D921D26F9A80600059A9F /* libPermission-Motion.a */,
+				5F4D921E26F9A80600059A9F /* libPermission-Notifications.a */,
+				5F4D921F26F9A80600059A9F /* libPermission-PhotoLibrary.a */,
+				5F4D922026F9A80600059A9F /* libPermission-PhotoLibraryAddOnly.a */,
+				5F4D922126F9A80600059A9F /* libPermission-Reminders.a */,
+				5F4D922226F9A80600059A9F /* libPermission-Siri.a */,
+				5F4D922326F9A80600059A9F /* libPermission-SpeechRecognition.a */,
+				5F4D922426F9A80600059A9F /* libPermission-StoreKit.a */,
+				5F4D922626F9A80600059A9F /* libPods-MBTaxiDriver.a */,
+				5F4D922726F9A80600059A9F /* libPromisesObjC.a */,
+				5F4D922826F9A80600059A9F /* libRCT-Folly.a */,
+				5F4D922926F9A80600059A9F /* libRCTTypeSafety.a */,
+				5F4D922A26F9A80600059A9F /* libReact-Core.a */,
+				5F4D922B26F9A80600059A9F /* libReact-CoreModules.a */,
+				5F4D922C26F9A80600059A9F /* libReact-cxxreact.a */,
+				5F4D922D26F9A80600059A9F /* libReact-jsi.a */,
+				5F4D922E26F9A80600059A9F /* libReact-jsiexecutor.a */,
+				5F4D922F26F9A80600059A9F /* libReact-jsinspector.a */,
+				5F4D923026F9A80600059A9F /* libreact-native-geolocation-service.a */,
+				5F4D923126F9A80600059A9F /* libreact-native-image-picker.a */,
+				5F4D923226F9A80600059A9F /* libreact-native-maps.a */,
+				5F4D923326F9A80600059A9F /* libreact-native-safe-area-context.a */,
+				5F4D923426F9A80600059A9F /* libreact-native-voice.a */,
+				5F4D923526F9A80600059A9F /* libReact-perflogger.a */,
+				5F4D923626F9A80600059A9F /* libReact-RCTAnimation.a */,
+				5F4D923726F9A80600059A9F /* libReact-RCTBlob.a */,
+				5F4D923826F9A80600059A9F /* libReact-RCTImage.a */,
+				5F4D923926F9A80600059A9F /* libReact-RCTLinking.a */,
+				5F4D923A26F9A80600059A9F /* libReact-RCTNetwork.a */,
+				5F4D923B26F9A80600059A9F /* libReact-RCTSettings.a */,
+				5F4D923C26F9A80600059A9F /* libReact-RCTText.a */,
+				5F4D923D26F9A80600059A9F /* libReact-RCTVibration.a */,
+				5F4D923E26F9A80600059A9F /* libReactCommon.a */,
+				5F4D923F26F9A80600059A9F /* libRNCCheckbox.a */,
+				5F4D924026F9A80600059A9F /* libRNCMaskedView.a */,
+				5F4D924126F9A80600059A9F /* libRNCPicker.a */,
+				5F4D924226F9A80600059A9F /* libRNDateTimePicker.a */,
+				5F4D924326F9A80600059A9F /* libRNFBApp.a */,
+				5F4D924426F9A80600059A9F /* libRNFBAuth.a */,
+				5F4D924526F9A80600059A9F /* libRNFBDatabase.a */,
+				5F4D924626F9A80600059A9F /* libRNFBStorage.a */,
+				5F4D924726F9A80600059A9F /* libRNGestureHandler.a */,
+				5F4D924826F9A80600059A9F /* libRNPermissions.a */,
+				5F4D924926F9A80600059A9F /* libRNReanimated.a */,
+				5F4D924A26F9A80600059A9F /* libRNScreens.a */,
+				5F4D924B26F9A80600059A9F /* libYoga.a */,
+				5F4D924C26F9A80600059A9F /* libYogaKit.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				AD45CCC8B97DFB345B737138 /* libPods-MBTaxiDriver.a */,
 				830CC4E5E08E110E130FC5B4 /* libPods-MBTaxiDriver-MBTaxiDriverTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DA438E2C54C44A09E283680 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -119,12 +496,32 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				5F4D91D426F9A6F000059A9F /* Montserrat-Black.ttf */,
+				5F4D91DE26F9A6F000059A9F /* Montserrat-BlackItalic.ttf */,
+				5F4D91E026F9A6F000059A9F /* Montserrat-Bold.ttf */,
+				5F4D91D326F9A6F000059A9F /* Montserrat-BoldItalic.ttf */,
+				5F4D91D926F9A6F000059A9F /* Montserrat-ExtraBold.ttf */,
+				5F4D91D826F9A6F000059A9F /* Montserrat-ExtraBoldItalic.ttf */,
+				5F4D91D226F9A6F000059A9F /* Montserrat-ExtraLight.ttf */,
+				5F4D91D126F9A6EF00059A9F /* Montserrat-ExtraLightItalic.ttf */,
+				5F4D91E226F9A6F000059A9F /* Montserrat-Italic.ttf */,
+				5F4D91E326F9A6F000059A9F /* Montserrat-Light.ttf */,
+				5F4D91DD26F9A6F000059A9F /* Montserrat-LightItalic.ttf */,
+				5F4D91D726F9A6F000059A9F /* Montserrat-Medium.ttf */,
+				5F4D91D626F9A6F000059A9F /* Montserrat-MediumItalic.ttf */,
+				5F4D91DC26F9A6F000059A9F /* Montserrat-Regular.ttf */,
+				5F4D91D526F9A6F000059A9F /* Montserrat-SemiBold.ttf */,
+				5F4D91DA26F9A6F000059A9F /* Montserrat-SemiBoldItalic.ttf */,
+				5F4D91DB26F9A6F000059A9F /* Montserrat-Thin.ttf */,
+				5F4D91DF26F9A6F000059A9F /* Montserrat-ThinItalic.ttf */,
+				5F4D91E126F9A6F000059A9F /* OFL.txt */,
 				13B07FAE1A68108700A75B9A /* MBTaxiDriver */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MBTaxiDriverTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D67B072E0642E92CE074EB68 /* Pods */,
+				5DA438E2C54C44A09E283680 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -246,9 +643,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F4D92A726F9A9D300059A9F /* Montserrat-Black.ttf in Resources */,
+				5F4D92A826F9A9D300059A9F /* Montserrat-BlackItalic.ttf in Resources */,
+				5F4D92A926F9A9D300059A9F /* Montserrat-Bold.ttf in Resources */,
+				5F4D92AA26F9A9D300059A9F /* Montserrat-BoldItalic.ttf in Resources */,
+				5F4D92AB26F9A9D300059A9F /* Montserrat-ExtraBold.ttf in Resources */,
+				5F4D92AC26F9A9D300059A9F /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				5F4D92AD26F9A9D300059A9F /* Montserrat-ExtraLight.ttf in Resources */,
+				5F4D92AE26F9A9D300059A9F /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				5F4D92AF26F9A9D300059A9F /* Montserrat-Italic.ttf in Resources */,
+				5F4D92B026F9A9D300059A9F /* Montserrat-Light.ttf in Resources */,
+				5F4D92B126F9A9D300059A9F /* Montserrat-LightItalic.ttf in Resources */,
+				5F4D92B226F9A9D300059A9F /* Montserrat-Medium.ttf in Resources */,
+				5F4D92B326F9A9D300059A9F /* Montserrat-MediumItalic.ttf in Resources */,
+				5F4D92B426F9A9D300059A9F /* Montserrat-Regular.ttf in Resources */,
+				5F4D92B526F9A9D300059A9F /* Montserrat-SemiBold.ttf in Resources */,
+				5F4D92B626F9A9D300059A9F /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				5F4D92B726F9A9D300059A9F /* Montserrat-Thin.ttf in Resources */,
+				5F4D92B826F9A9D300059A9F /* Montserrat-ThinItalic.ttf in Resources */,
+				5F4D92B926F9A9D300059A9F /* OFL.txt in Resources */,
+				5F205B72270912AC00AC5C4F /* GoogleService-Info.plist in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				5F0B2E2A26F923ED00701692 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +730,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
 			name = "[CP-User] [RNFB] Core Configuration";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +918,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MBTaxiDriver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,6 +945,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				INFOPLIST_FILE = MBTaxiDriver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

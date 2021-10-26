@@ -1,37 +1,90 @@
 {
   "project_info": {
-    "project_number": "459934870171",
-    "project_id": "mbtaxidriver",
-    "storage_bucket": "mbtaxidriver.appspot.com"
+    "project_number": "894926579462",
+    "firebase_url": "https://mbtaxi2021-default-rtdb.firebaseio.com",
+    "project_id": "mbtaxi2021",
+    "storage_bucket": "mbtaxi2021.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:459934870171:android:cedefce8cb763cc501f43e",
+        "mobilesdk_app_id": "1:894926579462:android:d87d47fa02eea39b15a087",
         "android_client_info": {
-          "package_name": "com.mbtaxidriver"
+          "package_name": "com.mbtaxi"
         }
       },
       "oauth_client": [
         {
-          "client_id": "459934870171-a2e96c9vfcamaks7l64dbnb8t6pkg231.apps.googleusercontent.com",
+          "client_id": "894926579462-228m72p6qhne6682p2394vrj9o5f4jma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mbtaxi",
+            "certificate_hash": "1b6961a8e19e3b39a4a2667bcb897a6303ab7302"
+          }
+        },
+        {
+          "client_id": "894926579462-828418rsnvjuhk3q5cbs4eu4i28f2mhp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBh3Ydx8zIAf6RHHiGRY_K8BhUi-L2_HlI"
+          "current_key": "AIzaSyDQIHiN5rV8VLjDksEr1I02JVWRVzKDlC4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "459934870171-a2e96c9vfcamaks7l64dbnb8t6pkg231.apps.googleusercontent.com",
+              "client_id": "894926579462-828418rsnvjuhk3q5cbs4eu4i28f2mhp.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "459934870171-lj3c900crmqk1hnukp2pv9hdj8k81m2n.apps.googleusercontent.com",
+              "client_id": "894926579462-7p9tnsgj6c01s1gk5ff53htu79iliv91.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.mbouendeu.MBTaxiDriver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894926579462:android:7447591990ad5ca215a087",
+        "android_client_info": {
+          "package_name": "com.mbtaxidriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894926579462-nrp6o46g757t004kh4m3sl4p7gnqvcdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mbtaxidriver",
+            "certificate_hash": "19e251be718e4610b357cf13aa24d7cef0b5a310"
+          }
+        },
+        {
+          "client_id": "894926579462-828418rsnvjuhk3q5cbs4eu4i28f2mhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQIHiN5rV8VLjDksEr1I02JVWRVzKDlC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894926579462-828418rsnvjuhk3q5cbs4eu4i28f2mhp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "894926579462-7p9tnsgj6c01s1gk5ff53htu79iliv91.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "org.mbouendeu.MBTaxiDriver"

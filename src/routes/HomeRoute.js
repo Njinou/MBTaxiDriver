@@ -38,7 +38,6 @@ import auth from '@react-native-firebase/auth';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { useEffect, useState } from 'react/cjs/react.development';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -53,10 +52,10 @@ const  HomeRoute = (props)=> {
   const [isUserRider,setIsUserRider] = React.useState(true);
   const [selectingUser,setSelectingUser] = React.useState (false); 
   const [user,setUser] = React.useState(auth().currentUser);
-  const [openingRating,setOpeningRating] = useState(false);
-  const [rating,setRating] = useState(0);
-  const [comment,setComment] = useState("");
-  const[lastRide,setLastRide] = useState(null);
+  const [openingRating,setOpeningRating] = React.useState(false);
+  const [rating,setRating] = React.useState(0);
+  const [comment,setComment] = React.useState("");
+  const[lastRide,setLastRide] = React.useState(null);
 
   function Home(props) {
     return (
@@ -71,7 +70,7 @@ const  HomeRoute = (props)=> {
   }
 
 
-  useEffect (()=>{   
+  React.useEffect (()=>{   
     const url = 'users/' + auth().currentUser.uid ;
   
     const reference = database().ref(url);

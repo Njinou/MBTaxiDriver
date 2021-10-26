@@ -57,3 +57,9 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+android/app/release/
+android/app/testKey
+android/app/upload
+android/java_pid87354.hprof
+yarn.lock

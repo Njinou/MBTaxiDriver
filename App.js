@@ -1,4 +1,5 @@
 import 'react-native-gesture-handler';
+
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -22,13 +23,15 @@ import imageKeys from './src/keyText/imageKeys';
 
 import LoginRoute from './src/routes/LoginRoute';
 import HomeRoute from './src/routes/HomeRoute';
- 
+import MapsScreen from './src/components/maps/MapsScreen'
 import auth from '@react-native-firebase/auth';
 import database from '@react-native-firebase/database';
 
 import DestinationInputComp from './src/components/common/DestinationInputComp';
 
 import { NavigationContainer } from '@react-navigation/native';
+
+import CircularProgress from './CircularProgress';
 
 const App: () => React$Node = () => {
 
@@ -74,7 +77,7 @@ const App: () => React$Node = () => {
 //au lieu de Home ... on peut chercher a confirmer le code .... dans Home ... si le code nest pas verifie... 
 //sil nya pas de numero de telephone on met le modal ... 
 
-//return <DestinationInputComp/>
+//return <MapsScreen/> // <CircularProgress/> //
 
     if (initializing) return <ActivityIndicator size="large" color="#00ff00" />; 
       if (!user) {

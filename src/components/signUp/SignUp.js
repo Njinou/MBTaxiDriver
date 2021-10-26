@@ -1,6 +1,6 @@
 import React,{useState,useEffect,useRef} from 'react';
 import {Image,StyleSheet,View,Dimensions,useWindowDimensions,Text, ScrollView, Pressable,Keyboard,ActivityIndicator,Alert} from 'react-native';
-import fontKeys from '../../keyText/fontKeys';
+//import fontKeys from '../../keyText/fontKeys';
 import imageKeys from '../../keyText/imageKeys';
 
 import textKeys from '../../keyText/textKeys';
@@ -202,7 +202,9 @@ return (
         <ScrollView style={{alignSelf:'stretch',}} contentContainerStyle={{alignItems:'center',paddingBottom:54}} >  
          <View style={{alignSelf:'stretch',alignItems:'center'}}>
        
-        <Text style={{color:'red',fontSize:22,marginBottom:10,fontFamily:fontKeys.MEBI,color:'#F2B84D',marginTop:10,
+        <Text style={{color:'red',fontSize:22,marginBottom:10,
+            //fontFamily:fontKeys.MEBI,
+            color:'#F2B84D',marginTop:10,
           textShadowColor: 'rgba(4,80,110,0.5)',
           textShadowOffset: {width: 1, height: 1},
           textShadowRadius: 5
@@ -237,7 +239,7 @@ return (
             <TaxiText text={error} styleText={{marginBottom:5,fontSize:18,color:'red',fontWeight:'normal'}}/>
 
             <TaxiTextInput returnKeyType="next" placeholder={textKeys.fullName} func={settingUsername} value={username}  onSubmitEditing={() => {phoneNumberInput.current.focus(); }}/>
-            <TaxiTextInput returnKeyType="next" placeholder={textKeys.phoneNumber} func={settingPhoneNumber} value={phoneNumber} keyboardType='numeric' ref={phoneNumberInput} onSubmitEditing={() => {emailInput.current.focus(); }} />
+            <TaxiTextInput returnKeyType="next" placeholder={textKeys.phoneNumber} func={settingPhoneNumber} value={phoneNumber} keyboardType='phone-pad' ref={phoneNumberInput} onSubmitEditing={() => {emailInput.current.focus(); }} />
             <TaxiTextInput returnKeyType="next" placeholder={textKeys.email} func={settingEmail} value={email} keyboardType='email-address'  ref={emailInput} onSubmitEditing={() => {passwordInput.current.focus();}}/>
             <TaxiTextInput returnKeyType="next" placeholder={textKeys.password} func={settingPassword} value={password} secureTextEntry={true}  blurOnSubmit={false}  ref={passwordInput} onSubmitEditing={() => {confirmPasswordInput.current.focus()}} />
             <TaxiText text={passwordMessage} styleText={{marginBottom:5,fontSize:16,color:'red',fontWeight:'normal'}}/>
@@ -258,7 +260,7 @@ const styles = StyleSheet.create({
     text:{
         color:'#F2B84D',
         fontSize:12,
-        fontFamily:fontKeys.MSB
+        //fontFamily:fontKeys.MSB
     },
     center: {
       flex: 1,

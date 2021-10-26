@@ -1,12 +1,16 @@
 import React, { useEffect,useState ,useRef} from "react"
 import { SafeAreaView, StatusBar, StyleSheet,TextInput,View,Modal ,Text,Pressable,PanResponder,Animated,useWindowDimensions,} from "react-native"
-import MapView, { PROVIDER_GOOGLE,Marker } from "react-native-maps"
+import MapView, { PROVIDER_GOOGLE,Marker, Circle } from "react-native-maps"
 import { check, request, PERMISSIONS, RESULTS } from "react-native-permissions" //
 import Geolocation from "react-native-geolocation-service"
 import Geocoder from 'react-native-geocoding';
 
 import MapViewDirections from 'react-native-maps-directions';
 import fontKeys from "../../keyText/fontKeys"
+import * as turf from "@turf/turf";
+import database from "@react-native-firebase/database"
+import MatchDriverScreen from "../rider/MatchDriver/MatchDriverScreen"
+import auth from '@react-native-firebase/auth';
 
 const GOOGLE_MAPS_API_KEY = 'AIzaSyB6iuVD8X4sEeHAGHY3tmMQRyM_Vyoc3UU';
 Geocoder.init(GOOGLE_MAPS_API_KEY, {language: 'en'});
@@ -25,6 +29,10 @@ const MapsScreen = () => {
     const [backgroundColor,setBackgroundColor] = useState('#fff');
     const [distance,setDistance] = useState(0);
     const [timing,setTiming] = useState(0);
+    const [trajectoryDriver, setTrajectoryDriver]= useState([])
+
+
+    const [featuresCollection,setFeaturesCollection] = useState([]);
 
     const handleLocationPermission = async () => { 
         let permissionCheck = ""
@@ -88,7 +96,18 @@ Geocoder.from(41.89, 12.49)
 		.catch(error => console.warn(error));
             */
         })
-            setLocation({ latitude, longitude })
+          //for testing purpose i will set it to yassa ...  Yassa Latitude :   3,9708  Yassa Longitude :   9,8132
+          //destination bonanjo  Bonanjo Latitude :   4+0394  Bonanjo Longitude :   9+687
+            setLocation({ latitude, longitude });
+            database().ref('/drivers/position/')
+            .child(auth().currentUser.uid)
+            .set ('4+0394,9+687')//(auth().currentUser.uid)
+            //.push() //(JSON.stringify(latitude).replace('.','+') +','+JSON.stringify(longitude).replace('.','+'))  
+
+            database().ref('/drivers/availablePl/')
+            .child(auth().currentUser.uid)
+            .set (5)
+            
           },
           error => {
             console.log(error.code, error.message)
@@ -156,10 +175,163 @@ Geocoder.from(41.89, 12.49)
 
       const destination = {latitude: 3.866667, longitude: 11.516667};
 
+      const neighbors = () =>{
+
+      }
+      /*
+      1)- envoyer continuellement les coordinates
+      2)- dans mon tableau des 10 points, je remplace les points les plus proches... du target points en fonction de la distance qui les separe.... item.geometry.properties.distanceToPoint
+      3)- prendre la base sur laquelle on a deja compare ...et comparer aux nouvelles entrees ... si le chauffeur changer de route... il peut se rapprocher de la destination 
+      4)-
+      
+      dans un map on sauvegarde les distances en fonction des target points et puis on filtre juste pour prendre les distances minimales ... 
+      // et retourner les nearest .... 
+      programmation dynamik...
+      sauvegarder les distances 
+      */
+      function compareDistance(a, b) {
+        //properties
+        return a.properties.distanceToPoint - b.properties.distanceToPoint;
+      }
+
+      /*
+      
+function savinDataMap (tab, val ){
+  let cle =  tab.toString()  + '[' + val + ']';
+ return cle;
+}
+
+console.log(savinData([1, [1, 1]],[2,3]));
+
+a.set(savinData([1, [1, 1]],[2,3]),0989);
+//console.log(a.get(savinData([1, 1, 1],[2,3])))
+console.log(a.get(savinData([1, [1, 1]],[2,3])));
+      */
+
+
+function savinDataMap (tab, val ){
+  let cle =  tab.toString()  + ';' + val ;
+ return cle;
+}
+
+const closestPointSol = new Map();
+
+
+/*
+
+
+function sortingArray (a,b){
+ return a-b;
+}
+
+function neighborPointMod(targetPoint,points) {
+        // Input validation
+        
+        let arraySize = points.length<=10? points.length: 10;
+        var neighborArray =  new Array(arraySize);
+        for (j=0 ; j <neighborArray.length; j++){
+          neighborArray[j] =  points[j];
+        }
+        neighborArray = neighborArray.sort(sortingArray);
+        points.slice(arraySize, points.length).map( pt => {
+          const distanceToPoint =  Math.abs(targetPoint - pt);
+
+          //neighborArray = neighborArray.sort(compareDistance); //sortng after each point 
+          let tempVal = 0; // shift of one case to the right ....
+           for (i =0 ; i<neighborArray.length; i++){
+             
+              console.log("This is the  state of the array at the moment...before condition",neighborArray)
+             if (distanceToPoint< Math.abs(targetPoint -neighborArray[i])) {
+              //neighborArray.shift();
+              neighborArray.splice(i+1,0,pt);
+              neighborArray =neighborArray.slice(0,neighborArray.length-1);
+
+              let closest = pt;
+             // neighborArray[i] = closest;
+              //neighborArray.splice(i,0,pt);
+              break;
+             } 
+           }
+          
+        });
+        return neighborArray;
+      }
+      
+      let testArray = [14,-9,5,33,96,-1,0,75,54,-23,-22];
+      //console.log("original array... ", testArray);
+      neighborPointMod(0,testArray);
+
+*/
+
+function sortingArray (a,b){
+  return a-b;
+ }
+      function neighborPointMod(
+        targetPoint,points) {
+         // Input validation
+        if (!targetPoint) throw new Error("targetPoint is required");
+        if (!points) throw new Error("points is required");
+        
+        let finalArray = [];
+        let arraySize = points.features.length<=10? points.features.length: 10;
+        var neighborArray =  new Array(arraySize);
+        for (j=0 ; j <neighborArray.length; j++){
+
+          neighborArray[j] = turf.clone(points.features[j]);
+          neighborArray[j].properties.featureIndex = j;
+          neighborArray[j].properties.distanceToPoint = turf.distance(targetPoint, neighborArray[j]);
+        }
+        
+        neighborArray = neighborArray.sort(compareDistance);
+      
+        turf.featureEach(points, (pt, featureIndex) => {
+          const distanceToPoint = turf.distance(targetPoint, pt);
+
+          for (i =0 ; i<neighborArray.length; i++){
+             if (distanceToPoint< neighborArray[i].properties.distanceToPoint) {
+              let closest = turf.clone(points.features[featureIndex]);
+              closest.properties.featureIndex = featureIndex;
+              closest.properties.distanceToPoint = distanceToPoint;
+              neighborArray.splice(i,0,closest);
+              neighborArray =neighborArray.slice(0,neighborArray.length-1);
+              break;
+             } 
+           }
+        });
+        return neighborArray;
+      }
+
+      function nearestPointMod(
+        targetPoint,points) {
+        // Input validation
+        if (!targetPoint) throw new Error("targetPoint is required");
+        if (!points) throw new Error("points is required");
+          
+        let nearest;
+        let minDist = Infinity;
+        let bestFeatureIndex = 0;
+        
+        turf.featureEach(points, (pt, featureIndex) => {
+          const distanceToPoint = turf.distance(targetPoint, pt);
+           
+          if (distanceToPoint < minDist) {
+            bestFeatureIndex = featureIndex;
+            minDist = distanceToPoint;
+          }
+        });
+        nearest = turf.clone(points.features[bestFeatureIndex]);
+        nearest.properties.featureIndex = bestFeatureIndex;
+        nearest.properties.distanceToPoint = minDist;
+        return nearest;
+      }
       /*
       Distance: 244.741 km
 [Fri Sep 10 2021 23:24:07.434]  LOG      Duration: 257.25 min
       */
+
+hashCode = s => s.split('').reduce((a,b)=>{a=((a<<5)-a)+b.charCodeAt(0);return a&a},0)
+
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" />
@@ -207,9 +379,13 @@ Geocoder.from(41.89, 12.49)
         }}
         showsUserLocation={true}
       >   
+      
           <MapViewDirections
-                origin={{latitude: location.latitude, longitude: location.longitude}}
-                destination={{latitude: 4.061536, longitude: 9.786072}}
+          //{{latitude: location.latitude, longitude: location.longitude}}
+          // Latitude :     Yassa Longitude :   
+               // waypoints={ (trajectoryDriver.length > 2) ? trajectoryDriver.slice(1, -1): undefined}
+                origin= {{latitude: 3.9708, longitude: 9.8132}}
+                destination={{latitude: 4.0394, longitude: 9.687}}
                 apikey={GOOGLE_MAPS_API_KEY}
                 strokeWidth ={5}
                 strokeColor="black"
@@ -217,7 +393,78 @@ Geocoder.from(41.89, 12.49)
                   setDistance(result.distance.toFixed(2))
                   setTiming(result.duration)
                   console.log(`Distance: ${result.distance} km`)
-                  console.log(`Duration: ${result.duration} min.`)   
+                  console.log(`Duration: ${result.duration} min.`) 
+                 // let featurePoints = result.coordinates.map ( element => new Array(element.longitude, element.latitude));
+                  
+                 var targetAltitude = [9.738832, 4.057143];
+                  var targetPoint = turf.point(targetAltitude, {"marker-color": "#0F0"});
+                  var points = turf.featureCollection( result.coordinates.map( rslt => turf.point([rslt.longitude,rslt.latitude])))
+                  var nearest = nearestPointMod(targetPoint, points);
+                  let uid = auth().currentUser.uid;
+
+                  let obj= {
+                    [uid]:points
+                  }
+
+                  neighborPointMod(targetPoint, points);
+
+                  //ici nous allons sauvegarder les coordonnees .. et non les points....
+                  pointsAltitude = result.coordinates.map( rslt => [rslt.latitude,rslt.longitude]);
+                  database().ref('/drivers/midPoints/')
+                  .child(auth().currentUser.uid)
+                  .set(pointsAltitude)
+                 /* if (!(savinDataMap(pointsAltitude,targetAltitude) in closestPointSol) ) {
+                    closestPointSol.set(savinDataMap(pointsAltitude,targetAltitude),neighborPointMod(targetPoint, points))
+                  }
+                  closestPointSol.get(savinDataMap(pointsAltitude,targetAltitude))*/
+
+                  console.log("Obj obj obj",nearest)
+                   
+                  //initialise pour recupere la precedente valeur .... 
+                 /* database()
+                  .ref('/maps/neighbor')
+                  .set({
+                    [savinDataMap(pointsAltitude,targetAltitude)]: neighborPointMod(targetPoint, points)
+                  })
+                  .then(() => console.log('Data set.'));*/
+                    let arr = result.coordinates.map( rslt =>  '(' +JSON.stringify(rslt.longitude).replace(".", "+") + ';' +JSON.stringify(rslt.latitude).replace(".", "+") +')' );   
+                    let  reducerPoints = arr.reduce((previousValue, currentValue) => previousValue + currentValue)
+                    reducerPoints = reducerPoints + `:${targetAltitude}`;
+                    console.log(reducerPoints.length);
+                    console.log(" reducerPoints reducerPoints  reducerPoints reducerPoints   ",hashCode(reducerPoints)); 
+                   
+                    let june  = JSON.stringify(hashCode(arr[0]));
+                    let trying = "trying";
+                    try{
+
+                    }
+                    catch(e){}
+                     
+                    // location/uid/ push set location driver on realtime... push with timestamp ... 
+                    // location/targetPoint/ uid : points...
+                    // trigger once a request is made... /request/{destinationId}/{uid}
+                    // 
+                    
+                    //
+                    database()
+                    .ref(`/maps/neighbor/${trying}`)
+                    .child(june)
+                    .set(neighborPointMod(targetPoint, points));
+
+                  //function(targetPoint) return 
+                  console.log ('it is not possible ', location);
+
+                 /* var targetPoint = turf.point([28.965797, 41.010086], {"marker-color": "#0F0"});
+                  var points = turf.featureCollection([
+                      turf.point([28.973865, 41.011122]),
+                      turf.point([28.948459, 41.024204]),
+                      turf.point([28.938674, 41.013324])
+                  ]);
+
+                  var nearest = turf.nearestPoint(targetPoint, points);
+                  console.log("nearest neearest ",nearest);*/
+                  //select only taxi that still have seats availabl
+                  //allow driver to speficy if they pick up someone other from the app so i will know the exact number of seats available ..
                 }}
             />
             <Marker

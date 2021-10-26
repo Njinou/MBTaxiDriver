@@ -33,6 +33,7 @@ import { Value } from 'react-native-reanimated';
 
 import auth from '@react-native-firebase/auth';
 
+import CircularProgress  from '../../../../CircularProgress';
 
 const GOOGLE_MAPS_API_KEY = 'AIzaSyB6iuVD8X4sEeHAGHY3tmMQRyM_Vyoc3UU';
 //DANS SCHEDULE RIDE IL PEUT CHOISIR LE POINT DE PICK UP 
@@ -75,7 +76,10 @@ const HomeRiderDestinationScreen: (props) => React$Node = (props) => {
     const [isPhonNumberSaved,setIsPhoneNumberSaved]= useState(auth().currentUser.phoneNumber);
     const [maLocation,setMaLocation] = useState(null);
     const [maDestination,setMaDestination] =useState(null);
-
+    const [callingDriver,setCallingDriver] = useState (false);
+    const [clientKey, setClientKey] = useState("");
+    const [clientVal, setClientVal] = useState("");
+    const [nbresPlaceChauffeur,setNbrePlaceChauffer] = useState ("");
     getMalocation =(val) => console.log("ma location DATA ",data);//setMaLocation (val)
     getMaDestination =(val) =>  console.log("Destination");//setMaDestination (val)
     
@@ -116,7 +120,11 @@ const HomeRiderDestinationScreen: (props) => React$Node = (props) => {
       }, [])
 
       useEffect (()=>{
-       
+      
+        database().ref('drivers/availablePl/').child(auth().currentUser.uid).on ('value', snapshot =>{
+          setNbrePlaceChauffer(Number(snapshot.val()));
+        })
+
         const url = 'users/' + auth().currentUser.uid ;
       
         const reference = database().ref(url);
@@ -137,6 +145,62 @@ const HomeRiderDestinationScreen: (props) => React$Node = (props) => {
                      // setOpeningRating(true)
                     }
                 });
+                
+                //drivers/alerting/uid
+                //ORDER BY PRIORITY HERE...  
+                database().ref('/drivers/alerting/' + auth().currentUser.uid)
+                .on ('value',snapshot =>{
+                  console.log("snapshot value from alertingggg", snapshot)
+                  if (snapshot.exists()){
+                   // setClientKey(snapshot.key);
+                   let idClient = Object.keys(snapshot.val())[0];
+                   let valSnap = snapshot.val();
+                   let valClient = valSnap[idClient];
+                   setClientKey(idClient);
+                  
+
+                   database().ref('/users/destinationPoint/' + valClient.destination+ '/clients/' +valClient.departure)
+                   .orderByValue()
+                   .equalTo(valClient.clientID)
+                  .on ('value',snapshot =>{
+                    if (snapshot.exists())
+                    {
+                    valClient.destinationKey= Object.keys(snapshot.val())[0];
+                    }
+                  //  console.log("disque d'or  SHITTTT",snapshot.val())
+                  }) 
+
+                  database().ref('/users/pickupPoint/' + valClient.departure+ '/clients/' )
+                   .orderByValue()
+                   .equalTo(valClient.clientID)
+                  .on ('value',snapshot =>{
+                     if (snapshot.exists())
+                  {
+                    valClient.pickUpKey= Object.keys(snapshot.val())[0];
+                  } 
+                    //console.log("disque d'or  SHITTTT",snapshot.val())
+                  }) 
+                  
+                  database().ref('/requests/' + valClient.destination+ '/' +valClient.departure).child(valClient.nbreOfPeople)
+                  .orderByValue()
+                  .equalTo(valClient.clientID)
+                 .on ('value',snapshot =>{
+                  if (snapshot.exists())
+                  {
+                   valClient.requestkey= Object.keys(snapshot.val())[0];
+                  }
+                 //  console.log("disque d'or  SHITTTT",snapshot.val())
+                 }) 
+
+                  setClientVal(valClient);
+
+                   console.log("Le client est d'habitude a faire du nimporte quoi",valClient);
+                    setCallingDriver(true);
+                  }else {
+                    setCallingDriver(false);
+                    console.log("...... what the fuck and this shit.... ",auth().currentUser.uid)
+                  }
+                })
       },[])
 
 
@@ -253,6 +317,38 @@ const HomeRiderDestinationScreen: (props) => React$Node = (props) => {
     // <DestinationInputComp  getMaDestination={getMaDestination} getMalocation={getMalocation}/>
 
     //<DestinationInputComp/>
+
+    console.log('clientVal requestkey ',clientVal.requestkey);
+    console.log('time',Date.now());
+    //REQUESTEDTIME...
+if (callingDriver) return  <Button title="accept Rides" onPress={()=> {
+   let placeDisponible = nbresPlaceChauffeur - Number(clientVal.nbreOfPeople);
+   database().ref('/drivers/availablePl/' + auth().currentUser.uid).child( auth().currentUser.uid).set(placeDisponible);
+    database().ref('/drivers/alerting/' + auth().currentUser.uid).child(clientKey).set({});
+    if (placeDisponible <=0)  database().ref('/drivers/position/').child( auth().currentUser.uid).set({}); // supprimer le chauffeur dans les taxis dispo
+    database().ref('/users/destinationPoint/' + clientVal.destination+ '/clients/' + clientVal.departure).child(clientVal.destinationKey).set({});
+    database().ref('/users/destinationPoint/' + clientVal.destination+ '/clients/' + clientVal.departure).child(clientVal.pickUpKey).set({});
+    database().ref('/requests/' + clientVal.destination+ '/' + clientVal.departure).child(clientVal.requestkey).set({});
+    let ride= database().ref('/rides/').push();
+    let rideKey = ride.key; 
+    let rideObj={
+      clientID : clientVal.clientID,
+      departure : clientVal.departure,
+      destination : clientVal.destination,
+      driverID : clientVal.driverID,
+      nbreOfPeople : clientVal.nbreOfPeople,
+      datetime:Date.now()
+    }
+
+    database().ref('/rides/').child(rideKey).set(rideObj);
+    database().ref('/drivers/rides/').push(rideKey);
+    database().ref('/users/rides/').push(rideKey);
+
+  
+
+}}/>
+//<CircularProgress func={(val)=> {console.log("Everyone is fucking idiot.... nigga ",val)}}/>
+
   if (error) return null;
   if (location) {   return (
     <View style={{height:'100%'}}>
